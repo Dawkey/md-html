@@ -1,0 +1,131 @@
+body{
+  background: rgb(250,250,250);
+  font-size: 16px;
+/*  font-family: Georgia,Helvetica, Tahoma, Arial,"Hiragino Sans GB","Microsoft YaHei", sans-serif;*/
+  overflow-x: hidden;
+}
+body,ul{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+input,textarea{
+  outline: 0;
+}
+::-webkit-scrollbar{/*滚动条*/
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track
+{
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: 0 0 1px #aaa inset;
+}
+::-webkit-scrollbar-thumb
+{
+  border-radius: 8px;
+  background-color: #aaa;
+}
+
+
+.main{
+  display: flex;
+  position: relative;
+  margin: auto;
+  margin: 140px 50px 20px;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+/*blog_write-----*/
+.blog_write{
+  width: 48%;
+  min-width: 500px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-content: flex-start;/*flex的一个非常蛋疼的属性,默认会让元素填满屏幕*/
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px 0 #999;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #333;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+.blog_write:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.6;
+  z-index: -1;
+}
+.text_title,.text_tag,.text_classify,.text_content{
+  display: block;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0;
+  border-left: 3px solid #dacbcb;
+  padding: 8px;
+  font-size: 30px;
+  background: transparent;
+}
+
+.text_title{
+  width: 75%;
+}
+.blog_write>div{
+  width: 25%;
+  height: 50px;
+}
+
+
+.text_tag,.text_classify{
+  height: 22px;
+  margin-top: 3px;
+  font-size: 16px;
+}
+.text_content{
+  margin-top: 48px;
+  min-height: 512px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: Tahoma,Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei", sans-serif;
+  resize: none;
+  overflow: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+
+
+/*blog_text*/
+.blog_text{
+  width: 48%;
+  min-width: 500px;
+  background: transparent;
+  margin-left: 4%
+}
+.blog_text:before{
+  opacity: 0.4;
+}
+
+
+
